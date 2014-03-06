@@ -102,12 +102,6 @@ class Simple_Template {
         return $contents = preg_replace("|\r?\n|", self::LINE_BREAK, $matches[0]);
 
     }
-    
-    private function is_curl() {
-    	
-    	return function_exists('curl_version');
-    	
-    }
 
 }
 
