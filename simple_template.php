@@ -82,7 +82,7 @@ class Simple_Template {
 
         }
         
-        $contents = preg_replace("|[\n\r\t\v]+[ ]*|", '', $contents);
+        $contents = preg_replace("|[\n\r\t]+[ ]*|", '', $contents);
         $targets = array('<!--', '-->');
         $replacements = array("<!--\n", "\n-->");
 
